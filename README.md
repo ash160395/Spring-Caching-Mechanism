@@ -32,6 +32,14 @@ Attributes:
 
     --> SpEL expression used for making the method caching conditional.
 	    Default is {""}, meaning the method result is always cached.
+	    
+6. String cacheManager() default "";
+
+    --> Bean name of the custom CacheManager to use to create a default CacheResolver if none is set already.
+	
+7. String cacheResolver() default "";
+
+    --> Bean name of the custom CacheResolver to use.
 
 
 # SpringCacheAnnotationParser
