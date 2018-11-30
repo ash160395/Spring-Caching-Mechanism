@@ -106,7 +106,7 @@ Defaults to the class's caching attribute if no method attribute is found.
 		Collection<CacheOperation> cacheOps = computeCacheOperations(method, targetClass);
 		if (cacheOps != null) {
 			if (logger.isDebugEnabled()) {
-				logger.debug("Adding cacheable method '" + method.getName() + "' with attribute: " + 						cacheOps);
+				logger.debug("Adding cacheable method '" + method.getName() + "' with attribute: " + cacheOps);
 			}
 			this.attributeCache.put(cacheKey, cacheOps);
 		}
